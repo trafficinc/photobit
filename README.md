@@ -4,6 +4,8 @@ A desktop image editor for working with photos, layers, text, and effects.
 
 This repository provides compiled Photobit downloads and release notes.
 
+Photobit is made with Rust, I built it because I was tired of paying high fees for an image editor I only used occasionally and didn't need all the bloat. I didn’t need it every day, but when I needed it, I needed it.
+
 ## Features
 
 - Layers, blend modes, opacity, and layer masks.
