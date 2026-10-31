@@ -17,12 +17,18 @@ This repository provides compiled Photobit downloads and release notes.
 
 ## Download and install
 
+The current release requires **macOS 13 Ventura or later** and an **Apple Silicon Mac (M1 or later)**.
+
 1. Open the **Releases** section of this repository.
-2. Download the latest Photobit app for your computer. The current Mac build is for **Apple Silicon (M1 or later)**.
-3. Open the downloaded `.dmg`, or extract the `.zip`, depending on the release asset.
+2. Download **Photobit-darwin-arm64.zip** from the latest release's **Assets** section.
+3. Double-click the ZIP to extract it.
 4. Drag **Photobit.app** into your **Applications** folder, then open it.
 
-## Opening the unsigned Mac app
+## Windows and Linux
+
+If you'd like a **Windows or Linux version**, open an issue in this repository and let me know which system you use. I can set up builds if there's interest. For Linux, please include your distribution and CPU architecture.
+
+## First launch on macOS
 
 Photobit is distributed without Apple Developer ID signing or notarization. macOS may block the first launch because it cannot verify the developer or check the app for malicious software.
 
@@ -46,5 +52,4 @@ Use **Save** to keep your editable layers in a `.photoworks` project. Use **Expo
 
 ## Feedback
 
-Report problems in this repository's **Issues** section. Include your Photobit version, macOS version, Mac model, and steps to reproduce the problem. Screenshots are helpful.
-
+Report problems in this repository's **Issues** section. Include your Photobit version, operating system version, computer model, and steps to reproduce the problem. Screenshots are helpful.
