@@ -6,7 +6,7 @@ Photobit is a lightweight desktop image editor for photos, layers, text, and eff
 
 I built Photobit because I was tired of paying high fees for a bloated image editor I only used occasionally. I didn’t need it every day, but when I needed it, I needed it.
 
-This repository provides compiled Photobit downloads and release notes.
+This repository provides compiled Photobit downloads and release notes. It's currently in Alpha.
 
 ![Photobit editing demo](app-01.png)
 
