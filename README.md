@@ -58,6 +58,17 @@ Open an image, select a layer, and choose a tool from the left toolbar. Import a
 
 Use **Save** to keep your editable layers in a `.photoworks` project. Use **Export As** to create a PNG or JPEG for sharing.
 
+## Performance and limits
+
+Photobit uses GPU rendering and a background Rust worker for image processing. Performance depends on image dimensions, layer count, effects, and hardware. Large filters, repairs, resizes, and exports can take time.
+
+- Document size: up to 16,384 pixels on either side and 64 million pixels total. Both limits apply.
+- Memory: the engine enforces a 512 MiB source-pixel budget. This is an internal allocation limit, not a cap on total application RAM; history, previews, GPU resources, and processing buffers require additional memory.
+- Undo: history is bounded to 200 entries and a 128 MiB accounting budget. Older entries are discarded as limits are reached.
+- Tool-specific limits: some operations support smaller working areas. Layer styles, for example, are limited to 8 megapixels including effect padding. A document within the overall size limit may still exceed an operation’s budget.
+- Color and precision: editing uses 8-bit sRGB pixels. Supported embedded profiles are converted on import; 16-bit inputs are reduced to 8-bit. HDR editing and monitor-profile display conversion are not implemented.
+- Saving: .photoworks projects preserve editable content, but undo history is not saved. Autosave and crash recovery are not implemented.
+
 ## Feedback
 
 Report problems in this repository's **Issues** section. Include your Photobit version, operating system version, computer model, and steps to reproduce the problem. Screenshots are helpful.
