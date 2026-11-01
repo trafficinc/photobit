@@ -6,6 +6,8 @@ Photobit is a lightweight desktop image editor for photos, layers, text, and eff
 
 I built Photobit because I was tired of paying high fees for a bloated image editor I only used occasionally. I didn’t need it every day, but when I needed it, I needed it.
 
+Photobit is an 8-bit sRGB image editor for web graphics, everyday photo edits, and social media images, rather than a replacement for complex applications (ie. Photoshop) that facilitate advanced photography and professional print workflows.
+
 This repository provides compiled Photobit downloads and release notes. It's currently in Alpha.
 
 ![Photobit editing demo](app-01.png)
